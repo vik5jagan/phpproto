@@ -15,9 +15,20 @@ class UrlController extends BaseController {
         $this->beforeFilter('apiauth');
     }
     // Edit this:
-    public function index()
+    public function getIndexd()
     {
-        //return 'Hello, API';
+        //return 'HelAPI';
+        
+        return Response::json(array(
+            'error' => false,
+            'users' => "users1->toArray()"),
+            200
+        );
+    }
+    
+      public function getIndex()
+    {
+        //return 'HelAPI';
         
         return Response::json(array(
             'error' => false,

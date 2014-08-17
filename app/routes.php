@@ -25,6 +25,7 @@ Route::get('/user', function()
 
 
 Route::group(array('prefix' => 'api/v1'), function() {
-    Route::resource('url', 'UrlController');
+    Route::resource('urld', 'UrlController@getIndexd');
+     Route::resource('url', 'UrlController@getIndex');
 });
 
